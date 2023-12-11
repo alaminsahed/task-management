@@ -1,11 +1,15 @@
+import { Footer } from "./_components/Footer";
 import NavBar from "./_components/NavBar";
 
 const MarketingLayout = ({ children }: { children: React.ReactNode }) => {
-  <div className="h-full bg-slate-100">
-    <NavBar />
+  return (
+    <div className="h-full bg-slate-100">
+      <NavBar />
 
-    <main className="pt-40 pb-20 bg-slate-100">{children}</main>
-  </div>;
+      <main className="pt-40 pb-20 bg-slate-100">{children}</main>
+      <Footer />
+    </div>
+  );
 };
 
 export default MarketingLayout;
