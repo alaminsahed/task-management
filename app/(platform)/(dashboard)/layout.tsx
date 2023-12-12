@@ -6,7 +6,6 @@ function DashBoardLayout({ children }: { children: React.ReactNode }) {
     <div className="h-full">
       <NavBar />
       {children}
-      <p>hello</p>
     </div>
   );
 }
